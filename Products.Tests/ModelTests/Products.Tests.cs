@@ -27,5 +27,13 @@ namespace Products.Tests
       New.LoafCost(6);
       Assert.AreEqual(20, New.OrderCost);
     }
+    
+    [TestMethod]
+    public void IsPastryCost_Six_True()
+    {
+      OrderPastry New = new OrderPastry(4);
+      New.TartCost(4);
+      Assert.AreEqual(6, New.OrderCost);
+    }
   }
 }
