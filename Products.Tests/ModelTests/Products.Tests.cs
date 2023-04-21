@@ -11,7 +11,7 @@ namespace Products.Tests
     {
       OrderBread New = new OrderBread(1);
       New.LoafCost(1);
-      Assert.AreEqual(5, New.LoafCost);
+      Assert.AreEqual(5, New.OrderCost);
     }
   }
 }
