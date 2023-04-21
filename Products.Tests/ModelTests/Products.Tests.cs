@@ -13,5 +13,12 @@ namespace Products.Tests
       New.LoafCost(1);
       Assert.AreEqual(5, New.OrderCost);
     }
+    [TestMethod]
+    public void IsBreadCost_Ten_True()
+    {
+      OrderBread New = new OrderBread(3);
+      New.LoafCost(3);
+      Assert.AreEqual(10, New.OrderCost);
+    }
   }
 }
